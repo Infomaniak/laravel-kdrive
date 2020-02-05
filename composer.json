@@ -1,0 +1,36 @@
+{
+    "name": "infomaniak/laravel-kdrive",
+    "description": "Infomaniak kDrive Storage driver for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Hedger",
+            "email": "nicolas.hedger@infomaniak.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Infomaniak\\KDrive\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "infomaniak/flysystem-kdrive": "^1.0",
+        "illuminate/support": "^5.0|^6.0|^7.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "scripts": {
+        "check-style": "phpcs src",
+        "fix-style": "phpcbf src"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Infomaniak\\KDrive\\KDriveServiceProvider"
+            ]
+        }
+    }
+}
